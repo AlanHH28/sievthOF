@@ -1,0 +1,281 @@
+/* Estilos para el navbar */
+body {
+  margin: 0; /* Aseguramos que no haya márgenes predeterminados en el cuerpo */
+}
+
+.navbar {
+  background-color: #0C4375;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* Ajustamos el relleno para dar espacio interno al navbar */
+  color: white;
+  height: 120px;
+  margin: 0; /* Aseguramos que no haya márgenes en el navbar */
+  box-sizing: border-box; /* Incluimos el relleno y el borde dentro del tamaño total del navbar */
+}
+.header {
+  position: relative;
+  z-index: 2; /* Valor de z-index mayor para el menú */
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Valor de z-index menor para el carrusel */
+}
+
+
+
+.logo img {
+position: absolute;
+width: 378px;
+height: 110px;
+left: 22px;
+top: 5px;
+}
+
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center; /* Alinea verticalmente los elementos en el centro */
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  list-style: none;
+  padding: 0;
+  white-space: nowrap; /* Hace que el texto se muestre en una sola línea */
+  overflow: hidden; /* Oculta el texto que se desborde del contenedor */
+}
+.sub-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+
+.nav-links li:hover .sub-menu {
+  display: block;
+}
+.login-button {
+  border: 2px solid #FF7A1A;
+  background-color: #FF7A1A;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto;
+  width: 80%; /* Ajusta el ancho del carrusel */
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 70%; /* Ajusta el ancho del contenedor para que las imágenes estén en una fila */
+}
+
+.carousel-slide img {
+  width: 80%; /* Ajusta el tamaño de las imágenes */
+  height: auto;
+  object-fit: cover;
+  flex: 1 0 auto; /* Permite que las imágenes se ajusten dentro del contenedor */
+}
+
+/* Estilos para los botones (puedes personalizarlos según sea necesario) */
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#prevBtn {
+  left: 0;
+}
+
+#nextBtn {
+  right: 0;
+}
+
+
+
+.card {
+  position: relative;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.card-title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  margin: 0;
+  border-radius: 3px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-description {
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around; /* Opcional: distribuye el espacio alrededor de las tarjetas */
+  flex-wrap: wrap; /* Opcional: permite que las tarjetas se envuelvan a la siguiente línea si no caben todas */
+  margin: 20px; /* Espaciado entre las tarjetas */
+}
+
+h2{
+  text-align: center;
+  padding-top: 15px;
+}
+
+
+.footer {
+  background-color: #0C4375;
+  color: white;
+  padding: 20px;
+  padding-top: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Alinea verticalmente los elementos del footer */
+}
+
+.footer-section {
+  text-align: center;
+  flex: 1; /* Ocupa el espacio disponible horizontalmente */
+  padding: 10px; /* Ajusta el espaciado interno de cada sección */
+}
+
+.social-media {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-media a,
+.footer-section a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-section h3 {
+  margin: 0;
+  font-size: 16px;
+  
+}
+
+.iconoF{
+
+width: 29.98px;
+height: 20.32px;
+margin-right: 5px;
+
+}
+
+
+
+.footer-logo {
+  width: 150px;
+  height: 230px; 
+  margin-right: 20px; /* Margen derecho para separarla del contenido */
+}
+
+
+/* Para la seccion de terminos y condiciones*/
+
+.footer-section-tc {
+  text-align: center;
+  flex: 1; /* Ocupa el espacio disponible horizontalmente */
+  padding: 5px; /* Ajusta el espaciado interno de cada sección */
+  padding-top: 75px;
+  
+}
+
+.footer-section-tc a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+
+.small-list {
+  font-size: 14px; 
+  margin: 0;
+  padding: 0; 
+  list-style: none; 
+}
+
+.small-list li {
+  margin-bottom: 10px; 
+}
+
+
+
+
+
+form {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+
+
+
