@@ -1,0 +1,52 @@
+
+.fondo-div {
+    background-image: url('../src/headerB.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contenido-div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 1100px;
+    display: flex; /* Agregamos flex para que los elementos dentro de contenido-div se alineen en fila */
+    justify-content: center;
+    align-items: center;
+  }
+  .contenido-div button {
+    display: block; /* Asegura un botón de ancho completo */
+    margin-right: auto; /* Alinea el botón a la derecha */
+}
+
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px; /* Ajustamos el margen derecho para separar los grupos de inputs */
+  }
+  
+  .input-group label {
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%; /* El input ocupará todo el ancho disponible */
+    margin-bottom: 10px; /* Espaciado entre los inputs */
+  }
+
+
+  .buttonB {
+  padding: 15px;
+  background-color: #3498db; /* Este establece el color del botón en azul */
+  width: 150px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  
